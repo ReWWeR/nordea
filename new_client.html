@@ -8,247 +8,237 @@
     <link rel="stylesheet" href="less/style.css">
 </head>
 <body>
+    <div class="wrapper">
+        <!-- Header -->
+        <header>
+            <!-- Navbar -->
+            <nav class="navbar navbar-default" role="navigation">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#">
+                            <img alt="Brand" src="img/nordea_logot.png">
+                        </a>
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
 
-    <!-- Header -->
-    <header>
-        <!-- Navbar -->
-        <nav class="navbar navbar-default" role="navigation">
-            <div class="container">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                    <a class="navbar-brand" href="#">
-                        <img alt="Brand" src="img/nordea_logot.png">
-                    </a>
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                            data-target="#bs-example-navbar-collapse-1">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="#">Работа с клиентом</a></li>
+                            <li><a href="#">Продукты</a></li>
+                            <li><a href="#">Квитовка</a></li>
+                            <li><a href="#">Сделки</a></li>
+                            <li><a href="#">Лимиты</a></li>
+                            <li><a href="#">Архив</a></li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#"><i class="icon-settings"></i> Настройки</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Уведомления <span
+                                        class="caret"></span></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">Separated link</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /.navbar-collapse -->
                 </div>
+                <!-- /.container-fluid -->
+            </nav>
 
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav">
-                        <li class="active"><a href="#">Работа с клиентом</a></li>
-                        <li><a href="#">Продукты</a></li>
-                        <li><a href="#">Квитовка</a></li>
-                        <li><a href="#">Сделки</a></li>
-                        <li><a href="#">Лимиты</a></li>
-                        <li><a href="#">Архив</a></li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span
-                                    class="caret"></span></a>
-                            <ul class="dropdown-menu" role="menu">
-                                <li><a href="#">Action</a></li>
-                                <li><a href="#">Another action</a></li>
-                                <li><a href="#">Something else here</a></li>
-                                <li class="divider"></li>
-                                <li><a href="#">Separated link</a></li>
-                                <li class="divider"></li>
-                                <li><a href="#">One more separated link</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#">Настройки</a></li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span
-                                    class="caret"></span></a>
-                            <ul class="dropdown-menu" role="menu">
-                                <li><a href="#">Action</a></li>
-                                <li><a href="#">Another action</a></li>
-                                <li><a href="#">Something else here</a></li>
-                                <li class="divider"></li>
-                                <li><a href="#">Separated link</a></li>
-                            </ul>
-                        </li>
-                    </ul>
+            <div class="header-bottom">
+                <div class="container">
+                    <h1>Создать нового клиента</h1>
                 </div>
-                <!-- /.navbar-collapse -->
             </div>
-            <!-- /.container-fluid -->
-        </nav>
+            <!-- /.header-bottom -->
+        </header>
 
-        <div class="">
-            <h1>Создать нового клиента</h1>
+        <!-- Content -->
+        <div class="container">
+            <form role="form">
+
+                <h3 class="form-caption">Сведения о клиенте</h3>
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <label>Наименование клиента*</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>ИНН*</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>Адрес клиента*</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>ФИО генерального директора</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>Основной владелец</label>
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <label>ОПФ*</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>КПП</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>Тип клиента</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>Статус клиента</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>Доля основного владельца в %%</label>
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                </div>
+
+                <a href="#">Еще параметры</a>
+
+                <h3>Список групп</h3>
+
+                <table class="table table-striped">
+                    <thead>
+                    <tr>
+                        <th>Тип группы</th>
+                        <th>Номер группы</th>
+                        <th>Наименование группы</th>
+                        <th>Осн. заемщик/материн. комп.</th>
+                        <th>Нач. участия</th>
+                        <th>Оконч. участия</th>
+                        <th></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Группа по ЦБ</td>
+                        <td>1234</td>
+                        <td>Группа С</td>
+                        <td>ВТБ24</td>
+                        <td>01.03.2013</td>
+                        <td>01.12.2015</td>
+                        <td>
+                            <a href="#"><i class="glyphicon glyphicon-trash"></i></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Группа по Нордеа</td>
+                        <td>2312</td>
+                        <td>Группа Д</td>
+                        <td>ВТБ24</td>
+                        <td>02.01.2013</td>
+                        <td>02.12.2016</td>
+                        <td>
+                            <a href="#"><i class="glyphicon glyphicon-trash"></i></a>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+
+                <a href="#">Добавить в группу</a>
+
+                <h3>Финансовая информация</h3>
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <label>Рейтинг клиента</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>Дата следующего пересмотра рейтинга</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>Финансовое положение (по РСБУ)</label>
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <label>Дата установления рейтинга</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>Данные по финансовой отчетности клиента</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>Дата установления ФП (по РСБУ)</label>
+                            <input type="text" class="form-control">
+                        </div>
+>>>>>>> 1b259ab9f1879bf659c79b237fa071c2101f2be5
+                    </div>
+                </div>
+
+                <h3>Дополнительные сведения</h3>
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <label>Категория заемщика</label>
+                            <select class="form-control">
+                                <option>Стандартная</option>
+                                <option>Стандартная</option>
+                                <option>Стандартная</option>
+                                <option>Стандартная</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <label>Рег. № Клиента в ЦФТ</label>
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                </div>
+
+                <p>Вложенные файлы:</p>
+
+                <a href="#">Загрузить файл</a>
+
+                <div>
+                    <div class="btn-group btn-group-lg">
+                        <button type="button" class="btn btn-primary">Сохранить</button>
+                        <button type="button" class="btn btn-default">Запросить кредитную историю</button>
+                        <button type="button" class="btn btn-default">Синхронизация с ЦФТ</button>
+                        <button type="button" class="btn btn-default">История изменений</button>
+                        <button type="button" class="btn btn-default">Лимиты</button>
+                    </div>
+                </div>
+
+            </form>
+            <!-- /form -->
         </div>
-        <!-- /.header-bottom -->
-    </header>
-
-    <!-- Content -->
-    <div class="container">
-        <form role="form">
-
-            <h3 class="form-caption">Сведения о клиенте</h3>
-
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="form-group">
-                        <label>Наименование клиента*</label>
-                        <input type="text" class="form-control">
-                    </div>
-                    <div class="form-group">
-                        <label>ИНН*</label>
-                        <input type="text" class="form-control">
-                    </div>
-                    <div class="form-group">
-                        <label>Адрес клиента*</label>
-                        <input type="text" class="form-control">
-                    </div>
-                    <div class="form-group">
-                        <label>ФИО генерального директора</label>
-                        <input type="text" class="form-control">
-                    </div>
-                    <div class="form-group">
-                        <label>Основной владелец</label>
-                        <input type="text" class="form-control">
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="form-group">
-                        <label>ОПФ*</label>
-                        <input type="text" class="form-control">
-                    </div>
-                    <div class="form-group">
-                        <label>КПП</label>
-                        <input type="text" class="form-control">
-                    </div>
-                    <div class="form-group">
-                        <label>Тип клиента</label>
-                        <input type="text" class="form-control">
-                    </div>
-                    <div class="form-group">
-                        <label>Статус клиента</label>
-                        <input type="text" class="form-control">
-                    </div>
-                    <div class="form-group">
-                        <label>Доля основного владельца в %%</label>
-                        <input type="text" class="form-control">
-                    </div>
-                </div>
-            </div>
-
-            <a href="#">Еще параметры</a>
-
-            <h3>Список групп</h3>
-
-            <table class="table table-striped">
-                <thead>
-                <tr>
-                    <th>Тип группы</th>
-                    <th>Номер группы</th>
-                    <th>Наименование группы</th>
-                    <th>Осн. заемщик/материн. комп.</th>
-                    <th>Нач. участия</th>
-                    <th>Оконч. участия</th>
-                    <th></th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td>Группа по ЦБ</td>
-                    <td>1234</td>
-                    <td>Группа С</td>
-                    <td>ВТБ24</td>
-                    <td>01.03.2013</td>
-                    <td>01.12.2015</td>
-                    <td>
-                        <a href="#"><i class="glyphicon glyphicon-trash"></i></a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Группа по Нордеа</td>
-                    <td>2312</td>
-                    <td>Группа Д</td>
-                    <td>ВТБ24</td>
-                    <td>02.01.2013</td>
-                    <td>02.12.2016</td>
-                    <td>
-                        <a href="#"><i class="glyphicon glyphicon-trash"></i></a>
-                    </td>
-                </tr>
-                </tbody>
-            </table>
-
-            <a href="#" data-toggle="modal" data-target="#myModal">Добавить в группу</a>
-
-            <h3>Финансовая информация</h3>
-
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="form-group">
-                        <label>Рейтинг клиента</label>
-                        <input type="text" class="form-control">
-                    </div>
-                    <div class="form-group">
-                        <label>Дата следующего пересмотра рейтинга</label>
-                        <input type="text" class="form-control">
-                    </div>
-                    <div class="form-group">
-                        <label>Финансовое положение (по РСБУ)</label>
-                        <input type="text" class="form-control">
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="form-group">
-                        <label>Дата установления рейтинга</label>
-                        <input type="text" class="form-control">
-                    </div>
-                    <div class="form-group">
-                        <label>Данные по финансовой отчетности клиента</label>
-                        <input type="text" class="form-control">
-                    </div>
-                    <div class="form-group">
-                        <label>Дата установления ФП (по РСБУ)</label>
-                        <input type="text" class="form-control">
-                    </div>
-                </div>
-            </div>
-
-            <h3>Дополнительные сведения</h3>
-
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="form-group">
-                        <label>Категория заемщика</label>
-                        <select class="form-control">
-                            <option>Стандартная</option>
-                            <option>Стандартная</option>
-                            <option>Стандартная</option>
-                            <option>Стандартная</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="form-group">
-                        <label>Рег. № Клиента в ЦФТ</label>
-                        <input type="text" class="form-control">
-                    </div>
-                </div>
-            </div>
-
-            <p>Вложенные файлы:</p>
-
-            <a href="#">Загрузить файл</a>
-
-            <div>
-                <div class="btn-group btn-group-lg">
-                    <button type="button" class="btn btn-primary">Сохранить</button>
-                    <button type="button" class="btn btn-default">Запросить кредитную историю</button>
-                    <button type="button" class="btn btn-default">Синхронизация с ЦФТ</button>
-                    <button type="button" class="btn btn-default">История изменений</button>
-                    <button type="button" class="btn btn-default">Лимиты</button>
-                </div>
-            </div>
-
-        </form>
-        <!-- /form -->
+        <!-- /content -->
     </div>
-    <!-- /content -->
-
-
+    <!-- /.wrapper -->
 
         <!-- Modal -->
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -339,8 +329,13 @@
       </div>
     </div>
     <!-- end of modal   -->  
+
+<!-- Script -->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script src="js/dropdown.js"></script>
 <script src="js/modal.js"></script>
+
+
+
 </body>
 </html>
