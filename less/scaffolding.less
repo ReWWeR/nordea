@@ -29,7 +29,10 @@ body {
   font-size: @font-size-base;
   line-height: @line-height-base;
   color: @text-color;
-  background-color: @body-bg;
+  background: @body-bg url('../img/bg.jpg') no-repeat 0 0;
+  background-size: cover;
+  min-width: 970px;
+  padding: 50px 0;
 }
 
 // Reset fonts for relevant elements
