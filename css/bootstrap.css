@@ -3132,6 +3132,32 @@ tbody.collapse.in {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
   background-clip: padding-box;
 }
+.dropdown-menu.arrow:after,
+.dropdown-menu.arrow:before {
+  display: block;
+  content: '';
+  border-style: solid;
+  border-width: 0 6px 7px 6px;
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+.dropdown-menu.arrow:after {
+  top: -5px;
+  border-color: transparent transparent #ffffff transparent;
+}
+.dropdown-menu.arrow:before {
+  top: -7px;
+  border-color: transparent transparent #d0d4d6 transparent;
+}
+.dropdown-menu.arrow.left:after,
+.dropdown-menu.arrow.left:before {
+  left: 14px;
+}
+.dropdown-menu.arrow.right:after,
+.dropdown-menu.arrow.right:before {
+  right: 31px;
+}
 .dropdown-menu.pull-right {
   right: 0;
   left: auto;
@@ -4282,25 +4308,6 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 }
 .include-dropdown:hover > ul {
   display: block;
-}
-.include-dropdown .dropdown-menu:before,
-.include-dropdown .dropdown-menu:after {
-  display: block;
-  content: '';
-  border-style: solid;
-  border-width: 0 6px 7px 6px;
-  position: absolute;
-  left: 14px;
-  width: 0;
-  height: 0;
-}
-.include-dropdown .dropdown-menu:after {
-  top: -5px;
-  border-color: transparent transparent #ffffff transparent;
-}
-.include-dropdown .dropdown-menu:before {
-  top: -7px;
-  border-color: transparent transparent #d0d4d6 transparent;
 }
 .breadcrumb {
   padding: 8px 15px;
