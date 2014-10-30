@@ -6507,6 +6507,9 @@ button.close {
 .find-client-container .input-find:after {
   clear: both;
 }
+.find-client-container .input-find input {
+  padding-right: 28px;
+}
 .find-client-container .find-icon {
   position: absolute;
   left: 11px;
@@ -6514,4 +6517,20 @@ button.close {
   margin-top: -7px;
   z-index: 11;
   color: #dfe4ea;
+}
+.find-client-container .clear-find {
+  position: absolute;
+  right: 13px;
+  top: 50%;
+  margin-top: -10.5px;
+  z-index: 11;
+}
+.find-client-container .btn-find {
+  background: #005e92;
+  color: #fff;
+  border-left: 1px solid #75a8c4;
+  border-right: 1px solid #5f98b8;
+  height: 34px;
+  padding-left: 28px;
+  padding-right: 28px;
 }
