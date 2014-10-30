@@ -132,7 +132,9 @@
                     </div>
                 </div>
 
-                <a href="#">Еще параметры</a>
+                <a class="link-dashed" href="#">
+                    <span>Еще параметры <i class="icon-caret-sm m"></i></span>
+                </a>
 
                 <h3>Список групп</h3>
 
@@ -174,7 +176,15 @@
                     </tbody>
                 </table>
 
-                <a href="#">Добавить в группу</a>
+                <div>
+                    <a class="link-dashed" href="#" data-toggle="modal" data-target="#myModal">
+                        <i class="icon-group m"></i> <span>Добавить в группу</span>
+                    </a>
+                    <div class="pull-right tip">
+                        <span class="group-color"></span>
+                        <span>Автоматически добавленные группы</span>
+                    </div>
+                </div>
 
                 <h3>Финансовая информация</h3>
 
@@ -233,15 +243,17 @@
 
                 <p>Вложенные файлы:</p>
 
-                <a href="#">Загрузить файл</a>
+                <a class="link-dashed" href="#">
+                    <i class="icon-upload m"></i> <span>Загрузить файл</span>
+                </a>
 
-                <div>
+                <div class="bottom-action">
                     <div class="btn-group btn-group-lg">
-                        <button type="button" class="btn btn-primary">Сохранить</button>
-                        <button type="button" class="btn btn-default">Запросить кредитную историю</button>
-                        <button type="button" class="btn btn-default">Синхронизация с ЦФТ</button>
-                        <button type="button" class="btn btn-default">История изменений</button>
-                        <button type="button" class="btn btn-default">Лимиты</button>
+                        <button type="button" class="btn btn-primary"><i class="icon-save"></i>Сохранить</button>
+                        <button type="button" class="btn btn-default"><i class="icon-request"></i>Запросить кредитную историю</button>
+                        <button type="button" class="btn btn-default"><i class="icon-synchronization"></i>Синхронизация с ЦФТ</button>
+                        <button type="button" class="btn btn-default"><i class="icon-history"></i>История изменений</button>
+                        <button type="button" class="btn btn-default"><i class="icon-limits"></i>Лимиты</button>
                     </div>
                 </div>
 
@@ -252,7 +264,7 @@
     </div>
     <!-- /.wrapper -->
 
-        <!-- Modal -->
+    <!-- Modal -->
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
@@ -340,14 +352,11 @@
         </div>
       </div>
     </div>
-    <!-- end of modal   -->  
+    <!-- end of modal -->
 
-<!-- Script -->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script src="js/dropdown.js"></script>
-<script src="js/modal.js"></script>
-
-
-
+    <!-- Script -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/dropdown.js"></script>
+    <script src="js/modal.js"></script>
 </body>
 </html>
