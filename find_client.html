@@ -9,7 +9,7 @@
 <body>
 
 <div class="wrapper">
-        <!-- Header -->
+    <!-- Header -->
     <header>
         <!-- Navbar -->
         <nav class="navbar navbar-default" role="navigation">
@@ -31,37 +31,36 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="#">Работа с клиентом</a></li>
+                        <li class="include-dropdown active">
+                            <a href="#">Работа с клиентом</a>
+                            <ul class="dropdown-menu arrow left">
+                                <li><a href="#">Найти Клиента</a></li>
+                                <li><a href="#">Создать нового клиента</a></li>
+                                <li><a href="#">Группы клиентов</a></li>
+                            </ul>
+                        </li>
                         <li><a href="#">Продукты</a></li>
                         <li><a href="#">Квитовка</a></li>
                         <li><a href="#">Сделки</a></li>
                         <li><a href="#">Лимиты</a></li>
                         <li><a href="#">Архив</a></li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span
-                                    class="caret"></span></a>
-                            <ul class="dropdown-menu" role="menu">
-                                <li><a href="#">Action</a></li>
-                                <li><a href="#">Another action</a></li>
-                                <li><a href="#">Something else here</a></li>
-                                <li class="divider"></li>
-                                <li><a href="#">Separated link</a></li>
-                                <li class="divider"></li>
-                                <li><a href="#">One more separated link</a></li>
-                            </ul>
-                        </li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#">Настройки</a></li>
+                        <li>
+                            <a href="#"><span class="icon-settings"></span> Настройки</a>
+                        </li>
+                        <li>
+                            <a href="#"><span class="icon-notice"><span class="label label-primary">4</span></span> Уведомления</a>
+                        </li>
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span
-                                    class="caret"></span></a>
-                            <ul class="dropdown-menu" role="menu">
-                                <li><a href="#">Action</a></li>
-                                <li><a href="#">Another action</a></li>
-                                <li><a href="#">Something else here</a></li>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <img src="img/ico-user.png" alt="username" />
+                                <i class="icon-caret"></i>
+                            </a>
+                            <ul class="dropdown-menu arrow right" role="menu">
+                                <li><a href="#">Личный кабинет</a></li>
                                 <li class="divider"></li>
-                                <li><a href="#">Separated link</a></li>
+                                <li><a href="#">Выйти</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -73,12 +72,12 @@
 
         <div class="header-bottom">
             <div class="container">
-                <h1>Поиск клиента</h1>
+                <h1>Создать нового клиента</h1>
             </div>
         </div>
-            <!-- /.header-bottom -->
         <!-- /.header-bottom -->
     </header>
+    <!-- /header -->
 
     <!-- content -->
     <div class="container">

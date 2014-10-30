@@ -225,8 +225,12 @@
 .navbar-nav {
   margin: (@navbar-padding-vertical / 2) -@navbar-padding-horizontal;
 
-  > li > a {
-    line-height: @line-height-computed;
+  > li {
+    line-height: 50px;
+
+    > a {
+      line-height: @line-height-computed;
+    }
   }
 
   @media (max-width: @grid-float-breakpoint-max) {
@@ -260,10 +264,12 @@
 
     > li {
       float: left;
-      margin: (@navbar-padding-vertical - 4px) 20px;
+      margin: 20px;
 
       > a {
+        display: inline-block;
         padding: 0;
+        vertical-align: middle;
       }
     }
 
@@ -281,10 +287,17 @@
 // though so that navbar contents properly stack and align in mobile.
 
 @media (min-width: @grid-float-breakpoint) {
-  .navbar-left  { .pull-left(); }
-  .navbar-right { .pull-right(); }
-}
+  .navbar-left {
+    .pull-left();
+  }
+  .navbar-right {
+    .pull-right();
 
+    > li {
+      margin: 20px 0 20px 20px;
+    }
+  }
+}
 
 // Navbar form
 //
@@ -433,7 +446,6 @@
   }
 
   .navbar-toggle {
-    border-color: @navbar-default-toggle-border-color;
     &:hover,
     &:focus {
       background-color: @navbar-default-toggle-hover-bg;
@@ -445,7 +457,7 @@
 
   .navbar-collapse,
   .navbar-form {
-    border-color: @navbar-default-border;
+    //border-color: @navbar-default-border;
   }
 
   // Dropdown menu items
@@ -650,5 +662,20 @@
         color: @navbar-inverse-link-disabled-color;
       }
     }
+  }
+}
+
+.include-dropdown {
+  position: relative;
+  
+  > ul {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 50px;
+    z-index: @zindex-dropdown;
+  }
+  &:hover > ul {
+    display: block;
   }
 }

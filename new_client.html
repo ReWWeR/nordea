@@ -30,7 +30,14 @@
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav">
-                            <li class="active"><a href="#">Работа с клиентом</a></li>
+                            <li class="include-dropdown active">
+                                <a href="#">Работа с клиентом</a>
+                                <ul class="dropdown-menu arrow left">
+                                    <li><a href="#">Найти Клиента</a></li>
+                                    <li><a href="#">Создать нового клиента</a></li>
+                                    <li><a href="#">Группы клиентов</a></li>
+                                </ul>
+                            </li>
                             <li><a href="#">Продукты</a></li>
                             <li><a href="#">Квитовка</a></li>
                             <li><a href="#">Сделки</a></li>
@@ -38,16 +45,21 @@
                             <li><a href="#">Архив</a></li>
                         </ul>
                         <ul class="nav navbar-nav navbar-right">
-                            <li><a href="#"><i class="icon-settings"></i> Настройки</a></li>
+                            <li>
+                                <a href="#"><span class="icon-settings"></span> Настройки</a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="icon-notice"><span class="label label-primary">4</span></span> Уведомления</a>
+                            </li>
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Уведомления <span
-                                        class="caret"></span></a>
-                                <ul class="dropdown-menu" role="menu">
-                                    <li><a href="#">Action</a></li>
-                                    <li><a href="#">Another action</a></li>
-                                    <li><a href="#">Something else here</a></li>
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <img src="img/ico-user.png" alt="username" />
+                                    <i class="icon-caret"></i>
+                                </a>
+                                <ul class="dropdown-menu arrow right" role="menu">
+                                    <li><a href="#">Личный кабинет</a></li>
                                     <li class="divider"></li>
-                                    <li><a href="#">Separated link</a></li>
+                                    <li><a href="#">Выйти</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -64,6 +76,7 @@
             </div>
             <!-- /.header-bottom -->
         </header>
+        <!-- /header -->
 
         <!-- Content -->
         <div class="container">
@@ -139,13 +152,13 @@
                         <div class="form-group">
                             <label>Статус клиента</label>
                             <div class="dropdown">
-                                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown">
                                     Потенциальный
                                     <span class="caret"></span>
                                 </button>
-                                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu2">
                                     <li role="presentation"><a role="menuitem" tabindex="-1" href="/">Потенциальный</a></li>
-                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="/">Потенциальный</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="/">Не потенциальный</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -156,7 +169,9 @@
                     </div>
                 </div>
 
-                <a href="#">Еще параметры</a>
+                <a class="link-dashed" href="#">
+                    <span>Еще параметры <i class="icon-caret-sm m"></i></span>
+                </a>
 
                 <div class="group-list">
                     <h3>Список групп</h3>
@@ -198,8 +213,16 @@
                         </tr>
                         </tbody>
                     </table>
+                </div>
 
-                    <a data-target="#myModal" data-toggle="modal" href="#">Добавить в группу</a>
+                <div>
+                    <a class="link-dashed" href="#" data-toggle="modal" data-target="#myModal">
+                        <i class="icon-group m"></i> <span>Добавить в группу</span>
+                    </a>
+                    <div class="pull-right tip">
+                        <span class="group-color"></span>
+                        <span>Автоматически добавленные группы</span>
+                    </div>
                 </div>
 
                 <h3>Финансовая информация</h3>
@@ -263,15 +286,17 @@
 
                 <p>Вложенные файлы:</p>
 
-                <a href="#">Загрузить файл</a>
+                <a class="link-dashed" href="#">
+                    <i class="icon-upload m"></i> <span>Загрузить файл</span>
+                </a>
 
-                <div>
+                <div class="bottom-action">
                     <div class="btn-group btn-group-lg">
-                        <button type="button" class="btn btn-primary">Сохранить</button>
-                        <button type="button" class="btn btn-default">Запросить кредитную историю</button>
-                        <button type="button" class="btn btn-default">Синхронизация с ЦФТ</button>
-                        <button type="button" class="btn btn-default">История изменений</button>
-                        <button type="button" class="btn btn-default">Лимиты</button>
+                        <button type="button" class="btn btn-primary"><i class="icon-save"></i>Сохранить</button>
+                        <button type="button" class="btn btn-default"><i class="icon-request"></i>Запросить кредитную историю</button>
+                        <button type="button" class="btn btn-default"><i class="icon-synchronization"></i>Синхронизация с ЦФТ</button>
+                        <button type="button" class="btn btn-default"><i class="icon-history"></i>История изменений</button>
+                        <button type="button" class="btn btn-default"><i class="icon-limits"></i>Лимиты</button>
                     </div>
                 </div>
 
@@ -282,7 +307,7 @@
     </div>
     <!-- /.wrapper -->
 
-        <!-- Modal -->
+    <!-- Modal -->
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
@@ -370,14 +395,11 @@
         </div>
       </div>
     </div>
-    <!-- end of modal   -->  
+    <!-- end of modal -->
 
-<!-- Script -->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script src="js/dropdown.js"></script>
-<script src="js/modal.js"></script>
-
-
-
+    <!-- Script -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/dropdown.js"></script>
+    <script src="js/modal.js"></script>
 </body>
 </html>

@@ -1,5 +1,16 @@
 // Header
-//----------------------------------------------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------------------------------------------.
+.navbar {
+  .label {
+    border: 2px solid #fff;
+    position: absolute;
+    margin: -7px 0 0 5px;
+  }
+  .icon-notice {
+    margin-right: 15px;
+  }
+}
+
 .header-bottom {
   background: url('../img/header-bg.jpg') no-repeat 0 0;
   height: 125px;
@@ -15,11 +26,43 @@
   }
 }
 
-
-
 // Content
 //----------------------------------------------------------------------------------------------------------------------
+
+.link-dashed {
+  display: inline-block;
+  margin-bottom: 40px;
+
+  > span {
+    border-bottom: 1px dashed @link-color;
+  }
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+}
+
+.tip span {
+  vertical-align: middle;
+}
+
+.group-color {
+  background-color: #e3efe3;
+  .size(21px,27px);
+  display: inline-block;
+  margin-right: 8px;
+}
 
 
 // Footer
 //----------------------------------------------------------------------------------------------------------------------
+.bottom-action {
+  background-color: #e7ebed;
+  .box-shadow(inset 0px 2px 5px 0px rgba(0,0,0,0.06));
+  margin: 0 -65px;
+  padding: 24px 65px 40px 65px;
+
+  .btn > i {
+    margin-right: 5px;
+  }
+}
