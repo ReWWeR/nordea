@@ -6283,6 +6283,10 @@ button.close {
 .client-forms .group-list {
   margin-top: 40px;
 }
+.client-forms .form-group.has-success input {
+  padding-right: 28px;
+  background: transparent url(../img/icon-success.png) right 10px center no-repeat;
+}
 /*end of client-form*/
 /*main norder tables*/
 .table {
@@ -6314,3 +6318,58 @@ button.close {
   color: #414141;
 }
 /*end of table*/
+.find-client {
+  margin-left: -65px;
+  margin-right: -65px;
+  background: #e7ebed;
+}
+.find-client-container {
+  position: relative;
+  margin-left: 65px;
+  margin-right: 65px;
+  padding: 25px 0;
+}
+.find-client-container:after {
+  position: absolute;
+  content: "";
+  border-top: 8px solid #e7ebed;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  left: 6px;
+  bottom: -8px;
+}
+.find-client-container label {
+  color: #5e5e5e;
+  font-size: 13px;
+}
+.find-client-container input {
+  color: #414141;
+  padding-left: 34px;
+}
+.find-client-container .input-find {
+  position: relative;
+}
+.find-client-container .input-find:before,
+.find-client-container .input-find:after {
+  content: " ";
+  display: table;
+}
+.find-client-container .input-find:after {
+  clear: both;
+}
+.find-client-container .input-find:before,
+.find-client-container .input-find:after {
+  content: " ";
+  display: table;
+}
+.find-client-container .input-find:after {
+  clear: both;
+}
+.find-client-container .find-icon {
+  position: absolute;
+  left: 11px;
+  top: 50%;
+  margin-top: -7px;
+  z-index: 11;
+  color: #dfe4ea;
+}

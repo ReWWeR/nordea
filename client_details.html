@@ -82,22 +82,22 @@
 
         <!-- Content -->
     <div class="container">
-        <form role="form">
+        <form role="form" class="client-forms" action="" method="">
 
             <h3 class="form-caption">Сведения о клиенте</h3>
 
             <div class="row">
                 <div class="col-lg-6">
                     <div class="form-group">
-                        <label>Наименование клиента*</label>
+                        <label>Наименование клиента<em>*</em></label>
                         <input type="text" class="form-control">
                     </div>
                     <div class="form-group">
-                        <label>ИНН*</label>
+                        <label>ИНН<em>*</em></label>
                         <input type="text" class="form-control">
                     </div>
                     <div class="form-group">
-                        <label>Адрес клиента*</label>
+                        <label>Адрес клиента<em>*</em></label>
                         <input type="text" class="form-control">
                     </div>
                     <div class="form-group">
@@ -106,13 +106,33 @@
                     </div>
                     <div class="form-group">
                         <label>Основной владелец</label>
-                        <input type="text" class="form-control">
+                        <div class="dropdown">
+                            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                                Rosneft
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="/">Rosneft</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="/">Rosneft</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="/">Rosneft</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="/">Rosneft</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="form-group">
-                        <label>ОПФ*</label>
-                        <input type="text" class="form-control">
+                        <label>ОПФ<em>*</em></label>
+                        <div class="dropdown">
+                            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                                Открытые акционерные общества
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="/">Открытые акционерные общества</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="/">Открытые акционерные общества</a></li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="form-group">
                         <label>КПП</label>
@@ -120,11 +140,29 @@
                     </div>
                     <div class="form-group">
                         <label>Тип клиента</label>
-                        <input type="text" class="form-control">
+                        <div class="dropdown">
+                            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                                Юридическое лицо
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="/">Юридическое лицо</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="/">Юридическое лицо</a></li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="form-group">
                         <label>Статус клиента</label>
-                        <input type="text" class="form-control">
+                        <div class="dropdown">
+                            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                                Потенциальный
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="/">Потенциальный</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="/">Потенциальный</a></li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="form-group">
                         <label>Доля основного владельца в %%</label>
@@ -216,12 +254,16 @@
                 <div class="col-lg-6">
                     <div class="form-group">
                         <label>Категория заемщика</label>
-                        <select class="form-control">
-                            <option>Стандартная</option>
-                            <option>Стандартная</option>
-                            <option>Стандартная</option>
-                            <option>Стандартная</option>
-                        </select>
+                        <div class="dropdown">
+                            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                                Стандартная
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="/">Стандартная</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="/">Стандартная</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -236,7 +278,7 @@
             
             <div class="row">
                 <div class="col-lg-4">
-                    <ul>
+                    <ul class="nested-files">
                         <li>
                             <div>
                                 <span class="glyphicon glyphicon-file"></span>

@@ -1,0 +1,45 @@
+.find-client {
+  margin-left: -65px;
+  margin-right: -65px;
+  background: #e7ebed;
+}
+
+.find-client-container {
+  position: relative;
+  margin-left: 65px;
+  margin-right: 65px;
+  padding: 25px 0;
+
+  &:after {
+    position: absolute;
+    content:"";
+    border-top: 8px solid #e7ebed;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    left: 6px;
+    bottom: -8px;
+  }
+  
+  & label {
+    color: #5e5e5e;
+    font-size: 13px;
+  }
+
+  & input {
+    color: #414141;
+    padding-left: 34px;
+  }
+
+  & .input-find {
+    position: relative;
+    .clearfix();
+  }
+  & .find-icon {
+    position: absolute;
+    left: 11px;
+    top: 50%;
+    margin-top: -7px;
+    z-index: 11;
+    color: #dfe4ea;
+  }
+}
